@@ -1,5 +1,8 @@
 # 🌱 Personal MOC
 ## 🔗 リンク集
+### 🔴 重要情報
+- [[Personal/舟越さん-個人情報]] ⭐⭐⭐⭐⭐
+
 ### Health
 - [[Personal/Health/stress-management]]
 - [[Personal/Health/exercise-routines]]
@@ -9,6 +12,8 @@
 ### Productivity
 - [[Personal/Productivity/focus-techniques]]
 - [[Personal/Productivity/time-management]]
+### Writing-Style
+- [[Personal/Writing-Style/舟越さんの文章スタイル分析]]
 ## 📝 メモ
 - 月次レビューで必ず最新化する。
 - 関連タグ: #personal

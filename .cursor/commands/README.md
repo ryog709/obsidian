@@ -79,11 +79,18 @@
 **説明**: Inboxフォルダ内のファイルを適切なフォルダに振り分け  
 **使用例**: `/organize-inbox` または `/organize-inbox 20241022_API設計メモ.md`
 
-### 16. /self-analysis
+### 16. /organize-memory [カテゴリ]
+**説明**: 04_Memoryフォルダ内の知識ノートを重複なく、綺麗に整理（重複統合、タグ最適化、リンク追加、リファクタリング）  
+**使用例**: 
+- `/organize-memory` - 全カテゴリを整理
+- `/organize-memory AI` - AIカテゴリのみ整理
+- `/organize-memory Technical` - Technicalカテゴリのみ整理
+
+### 17. /self-analysis
 **説明**: あきらパパの自己分析会議を実施（月1回推奨）  
 **使用例**: `/self-analysis`
 
-### 17. /create-dashboards [ダッシュボード名]
+### 18. /create-dashboards [ダッシュボード名]
 **説明**: 各種ダッシュボードを作成・更新  
 **使用例**: 
 - `/create-dashboards` - 全てのダッシュボードを作成
@@ -157,6 +164,14 @@
 1. /organize-inbox [ファイル名]
    → Inboxファイルを適切なフォルダに振り分け
    → 04_Memory, 03_Input, 05_Output等に移動
+```
+
+### Memory整理（月1回または四半期ごと）
+```
+1. /organize-memory [カテゴリ]
+   → 04_Memory内の知識ノートを整理
+   → 重複ノートの統合、タグ最適化、リンク追加、リファクタリング
+   → カテゴリ指定で部分的に整理も可能
 ```
 
 ### 自己分析（月1回）

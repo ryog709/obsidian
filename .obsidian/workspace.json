@@ -11,24 +11,24 @@
             "id": "86a8e12c91d4c765",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "カンバンタスクがmdで作成可能.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
+                "file": "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのグラフビュー.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-trello",
-              "title": "カンバンタスクがmdで作成可能"
+              "icon": "lucide-file",
+              "title": "20251113_Obsidianのグラフビュー"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#リンク戦略",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "ブックマーク"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -207,18 +208,47 @@
   },
   "active": "86a8e12c91d4c765",
   "lastOpenFiles": [
-    "01_Inbox/test",
-    "00_Memo/test",
-    "00_Memo",
-    "フォルダ構成案内.md",
-    "2025-11-13.md",
-    "02_Daily/2025/2025-11/2025-11-13/2025-11-13-Obsidianセミナー-シミュレーションドラマ.md",
-    "02_Daily/2025/2025-11/2025-11-13/2025-11-13-Obsidianセミナー-アジェンダ.md",
-    "カンバンタスクがmdで作成可能.md",
-    "AGENTS.md",
-    "無題のファイル.canvas",
-    "Excalidraw/Drawing 2025-11-13 17.25.16.excalidraw.md",
-    "Excalidraw",
-    "無題のファイル.base"
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/layout/Footer.tsx",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/sections/Features.tsx",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/layout/Navigation.tsx",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/layout",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/providers/ThemeProvider.tsx",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/providers",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/MONGODB_SETUP.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/index.d.ts",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/package.json",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/src/v4/core/tests/locales/ru.test.ts",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/src/v4/core/tests/locales/tr.test.ts",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/zod/src/v4/core/tests/locales/be.test.ts",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mongodb-js/saslprep/readme.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@popperjs/core/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@popperjs/core/LICENSE.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@types/react-transition-group/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@hookform/resolvers/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/node_modules/react-is/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/utils/node_modules/react-is/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/CHANGELOG.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/utils/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/utils/CHANGELOG.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/system/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/system/CHANGELOG.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/types/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/styled-engine/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/styled-engine/CHANGELOG.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/private-theming/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/private-theming/CHANGELOG.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/core-downloads-tracker/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@babel/runtime/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@emotion/babel-plugin/node_modules/convert-source-map/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@emotion/weak-memoize/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@emotion/use-insertion-effect-with-fallbacks/README.md",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/window.svg",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/vercel.svg",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/next.svg",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/globe.svg",
+    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/file.svg",
+    "無題のファイル.canvas"
   ]
 }
