@@ -13,22 +13,22 @@
  *   node scripts/memo-to-inbox.js 雑メモ.md         # 特定のファイルを処理
  */
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // 設定
 const CONFIG = {
-  memoDir: path.join(__dirname, '../00_Memo'),
-  inboxDir: path.join(__dirname, '../01_Inbox'),
-  archiveDir: path.join(__dirname, '../99_Archive'),
+  memoDir: path.join(__dirname, "../00_Memo"),
+  inboxDir: path.join(__dirname, "../01_Inbox"),
+  archiveDir: path.join(__dirname, "../99_Archive"),
 };
 
 // 今日の日付をYYYYMMDD形式で取得
 function getTodayDate() {
   const today = new Date();
   const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, '0');
-  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
   return `${year}${month}${day}`;
 }
 
@@ -36,13 +36,13 @@ function getTodayDate() {
 function findMarkdownFiles(dir, fileList = []) {
   const files = fs.readdirSync(dir);
 
-  files.forEach(file => {
+  files.forEach((file) => {
     const filePath = path.join(dir, file);
     const stat = fs.statSync(filePath);
 
     if (stat.isDirectory()) {
       findMarkdownFiles(filePath, fileList);
-    } else if (file.endsWith('.md')) {
+    } else if (file.endsWith(".md")) {
       fileList.push(filePath);
     }
   });
@@ -53,7 +53,7 @@ function findMarkdownFiles(dir, fileList = []) {
 // ファイル内容を読み込む
 function readFileContent(filePath) {
   try {
-    return fs.readFileSync(filePath, 'utf-8');
+    return fs.readFileSync(filePath, "utf-8");
   } catch (error) {
     console.error(`❌ ファイル読み込みエラー: ${filePath}`, error.message);
     return null;
@@ -63,15 +63,18 @@ function readFileContent(filePath) {
 // メタデータを削除
 function removeMetadata(content) {
   // YAML frontmatterを削除
-  content = content.replace(/^---\n[\s\S]*?\n---\n/gm, '');
+  content = content.replace(/^---\n[\s\S]*?\n---\n/gm, "");
 
   // TODOセクションを削除
-  content = content.replace(/##\s*💡\s*学んだ概念・パターン[\s\S]*?(?=\n##|\n#|$)/g, '');
-  content = content.replace(/##\s*🔗\s*関連ノート[\s\S]*?(?=\n##|\n#|$)/g, '');
+  content = content.replace(
+    /##\s*💡\s*学んだ概念・パターン[\s\S]*?(?=\n##|\n#|$)/g,
+    ""
+  );
+  content = content.replace(/##\s*🔗\s*関連ノート[\s\S]*?(?=\n##|\n#|$)/g, "");
 
   // セッションID、時刻などのメタ情報を削除
-  content = content.replace(/セッションID:\s*\S+/g, '');
-  content = content.replace(/時刻:\s*\S+/g, '');
+  content = content.replace(/セッションID:\s*\S+/g, "");
+  content = content.replace(/時刻:\s*\S+/g, "");
 
   return content.trim();
 }
@@ -85,23 +88,26 @@ function generateTitle(content, originalFileName) {
   }
 
   // ファイル名から推測
-  const fileNameWithoutExt = path.basename(originalFileName, '.md');
-  if (fileNameWithoutExt && fileNameWithoutExt !== 'memo') {
+  const fileNameWithoutExt = path.basename(originalFileName, ".md");
+  if (fileNameWithoutExt && fileNameWithoutExt !== "memo") {
     return fileNameWithoutExt;
   }
 
   // デフォルト
-  return 'メモ';
+  return "メモ";
 }
 
 // 概要を生成
 function generateSummary(content) {
   // 最初の段落を抽出
-  const firstParagraph = content.split('\n\n')[0];
+  const firstParagraph = content.split("\n\n")[0];
   if (firstParagraph && firstParagraph.length > 10) {
-    return firstParagraph.substring(0, 100) + (firstParagraph.length > 100 ? '...' : '');
+    return (
+      firstParagraph.substring(0, 100) +
+      (firstParagraph.length > 100 ? "..." : "")
+    );
   }
-  return 'メモ内容';
+  return "メモ内容";
 }
 
 // Inbox形式に変換
@@ -131,8 +137,8 @@ function generateInboxFileName(title) {
   const date = getTodayDate();
   // ファイル名に使えない文字を置換
   const safeTitle = title
-    .replace(/[<>:"/\\|?*]/g, '-')
-    .replace(/\s+/g, '-')
+    .replace(/[<>:"/\\|?*]/g, "-")
+    .replace(/\s+/g, "-")
     .substring(0, 50); // 長すぎる場合は切り詰め
 
   return `${date}_${safeTitle}.md`;
@@ -152,14 +158,14 @@ function createInboxFile(content, fileName) {
     counter++;
   }
 
-  fs.writeFileSync(finalPath, content, 'utf-8');
+  fs.writeFileSync(finalPath, content, "utf-8");
   return finalPath;
 }
 
 // ファイルをアーカイブに移動
 function archiveFile(filePath) {
   const fileName = path.basename(filePath);
-  const archivePath = path.join(CONFIG.archiveDir, '2025', fileName);
+  const archivePath = path.join(CONFIG.archiveDir, "2025", fileName);
 
   // アーカイブディレクトリが存在しない場合は作成
   const archiveDir = path.dirname(archivePath);
@@ -193,7 +199,7 @@ function removeEmptyFolders(dir) {
     const files = fs.readdirSync(currentDir);
 
     // サブディレクトリを再帰的にチェック
-    files.forEach(file => {
+    files.forEach((file) => {
       const filePath = path.join(currentDir, file);
       if (fs.statSync(filePath).isDirectory()) {
         checkAndRemove(filePath);
@@ -216,7 +222,7 @@ function removeEmptyFolders(dir) {
 function main() {
   const targetFile = process.argv[2];
 
-  console.log('🚀 Memo→Inbox変換を開始します...\n');
+  console.log("🚀 Memo→Inbox変換を開始します...\n");
 
   // 対象ファイルを取得
   let targetFiles = [];
@@ -239,7 +245,7 @@ function main() {
   }
 
   if (targetFiles.length === 0) {
-    console.log('ℹ️  処理対象のファイルがありません。');
+    console.log("ℹ️  処理対象のファイルがありません。");
     return;
   }
 
@@ -251,20 +257,22 @@ function main() {
     errors: [],
   };
 
-  targetFiles.forEach(filePath => {
+  targetFiles.forEach((filePath) => {
     try {
       console.log(`📖 読み込み中: ${path.basename(filePath)}`);
 
       // ファイル内容を読み込む
       const content = readFileContent(filePath);
       if (!content) {
-        results.errors.push({ file: filePath, error: 'ファイル読み込み失敗' });
+        results.errors.push({ file: filePath, error: "ファイル読み込み失敗" });
         return;
       }
 
       // Inbox形式に変換
       const inboxContent = convertToInboxFormat(content, filePath);
-      const inboxFileName = generateInboxFileName(generateTitle(content, filePath));
+      const inboxFileName = generateInboxFileName(
+        generateTitle(content, filePath)
+      );
 
       // Inboxに作成
       const inboxPath = createInboxFile(inboxContent, inboxFileName);
@@ -272,7 +280,9 @@ function main() {
 
       // アーカイブに移動
       const archivePath = archiveFile(filePath);
-      console.log(`📦 アーカイブ: ${path.relative(CONFIG.archiveDir, archivePath)}\n`);
+      console.log(
+        `📦 アーカイブ: ${path.relative(CONFIG.archiveDir, archivePath)}\n`
+      );
 
       results.converted.push({
         original: filePath,
@@ -286,26 +296,26 @@ function main() {
   });
 
   // 空のフォルダを削除
-  console.log('🧹 空のフォルダを削除中...');
+  console.log("🧹 空のフォルダを削除中...");
   const removedFolders = removeEmptyFolders(CONFIG.memoDir);
   console.log(`✅ 削除したフォルダ: ${removedFolders}個\n`);
 
   // 結果を報告
-  console.log('='.repeat(50));
-  console.log('📊 処理結果');
-  console.log('='.repeat(50));
+  console.log("=".repeat(50));
+  console.log("📊 処理結果");
+  console.log("=".repeat(50));
   console.log(`✅ 変換成功: ${results.converted.length}件`);
   console.log(`❌ エラー: ${results.errors.length}件`);
   console.log(`🗑️  削除したフォルダ: ${removedFolders}個`);
 
   if (results.errors.length > 0) {
-    console.log('\n❌ エラー詳細:');
+    console.log("\n❌ エラー詳細:");
     results.errors.forEach(({ file, error }) => {
       console.log(`  - ${file}: ${error}`);
     });
   }
 
-  console.log('\n✨ 処理完了！');
+  console.log("\n✨ 処理完了！");
 }
 
 // 実行
@@ -314,4 +324,3 @@ if (require.main === module) {
 }
 
 module.exports = { main };
-
