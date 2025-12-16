@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Output/Areas/Content-Creation/Social-Media/X-Twitter/@TODO/post-obsidian-本質的価値.md",
+                "file": "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのノート作成ベストプラクティス.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "post-obsidian-本質的価値"
+              "title": "20251113_Obsidianのノート作成ベストプラクティス"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#知識管理",
+                "query": "tag:#javascript-snippet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,8 +190,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           }
         ],
@@ -219,6 +219,10 @@
   },
   "active": "3e4f750d91327753",
   "lastOpenFiles": [
+    "04_Memory/Technical/Programming/HTML-CSS/MVセクション-HTML-CSS-JavaScript実装.md",
+    "04_Memory/Technical/Programming/HTML-CSS/ローディング画面-HTML-CSS-JavaScript実装.md",
+    "04_Memory/Technical/_Tech-MOC.md",
+    "05_Output/Areas/Content-Creation/Social-Media/X-Twitter/@TODO/post-obsidian-本質的価値.md",
     "05_Output/Areas/Content-Creation/Social-Media/X-Twitter/@TODO/post-obsidian-痛みの解決.md",
     "02_Daily/2025/2025-11/2025-11-13/2025-11-13-Obsidianセミナー-アジェンダ.md",
     "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのグラフビュー.md",
@@ -239,7 +243,6 @@
     "00_Memo",
     "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのリンク戦略.md",
     "Tools/Obsidian.md",
-    "04_Memory/Technical/_Tech-MOC.md",
     "Tools",
     "04_Memory/Technical/Programming/Next.js/Next.jsとは何か.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/src/components/layout/Footer.tsx",
@@ -254,9 +257,6 @@
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@types/react-transition-group/README.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@hookform/resolvers/README.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/node_modules/react-is/README.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/utils/node_modules/react-is/README.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/README.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/CHANGELOG.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/window.svg",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/vercel.svg",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/next.svg",
