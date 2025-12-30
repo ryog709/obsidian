@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "83acb0f53676c4d2",
+        "id": "bba42590480f46cf",
         "type": "tabs",
         "children": [
           {
-            "id": "3e4f750d91327753",
+            "id": "79a08f64d9e0a21e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのノート作成ベストプラクティス.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "20251113_Obsidianのノート作成ベストプラクティス"
+              "title": "新規タブ"
             }
           }
         ]
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascript-snippet",
+                "query": "tag:#scrolltrigger",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -217,11 +203,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3e4f750d91327753",
+  "active": "79a08f64d9e0a21e",
   "lastOpenFiles": [
+    "04_Memory/Technical/Programming/HTML-CSS/トップコンセプトセクション-GSAP-ScrollTrigger実装.md",
+    "04_Memory/Technical/Programming/HTML-CSS/スライドテキスト・画像-無限スクロールアニメーション実装.md",
+    "04_Memory/Technical/_Tech-MOC.md",
+    "04_Memory/Technical/Tools/Obsidian/20251113_Obsidianのノート作成ベストプラクティス.md",
     "04_Memory/Technical/Programming/HTML-CSS/MVセクション-HTML-CSS-JavaScript実装.md",
     "04_Memory/Technical/Programming/HTML-CSS/ローディング画面-HTML-CSS-JavaScript実装.md",
-    "04_Memory/Technical/_Tech-MOC.md",
     "05_Output/Areas/Content-Creation/Social-Media/X-Twitter/@TODO/post-obsidian-本質的価値.md",
     "05_Output/Areas/Content-Creation/Social-Media/X-Twitter/@TODO/post-obsidian-痛みの解決.md",
     "02_Daily/2025/2025-11/2025-11-13/2025-11-13-Obsidianセミナー-アジェンダ.md",
@@ -254,9 +243,6 @@
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mongodb-js/saslprep/readme.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@popperjs/core/README.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@popperjs/core/LICENSE.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@types/react-transition-group/README.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@hookform/resolvers/README.md",
-    "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/node_modules/@mui/material/node_modules/react-is/README.md",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/window.svg",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/vercel.svg",
     "05_Output/Projects/@Active/SURVIBE-AI-Dec2025/website/public/next.svg",
